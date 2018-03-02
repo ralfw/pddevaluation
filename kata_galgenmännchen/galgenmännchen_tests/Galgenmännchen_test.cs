@@ -48,7 +48,6 @@ namespace galgenmännchen_tests
             Assert.AreEqual("abc", result);
         }
         
-        // @todo #1: Tests für Worte mit wiederholten Buchstaben
         [Test]
         public void Wort_mit_mehreren_verschiedenen_Buchstaben_auch_gleichen()
         {
