@@ -5,15 +5,21 @@ namespace galgenmännchen
     // @todo #1: Worte mit mehreren Buchstaben
     public class Galgenmännchen {
         private readonly string _gesuchtesWort;
+        private readonly char[] _erratenesWort;
 
         public Galgenmännchen(string gesuchtesWort) {
             _gesuchtesWort = gesuchtesWort;
+            _erratenesWort = "".PadLeft(gesuchtesWort.Length, '-').ToCharArray();
         }
 
         public string RateBuchstabe(char buchstabe)
         {
-
-            return Check_char(_gesuchtesWort[0], buchstabe).ToString();
+            for(var i=0; i<_erratenesWort.Length; i++)
+            {
+                if (_erratenesWort[i] == '-')
+                    _erratenesWort[i] = Check_char(_gesuchtesWort[i], buchstabe);
+            }
+            return new string(_erratenesWort);
         }
 
         private char Check_char(char wortbuchtabe, char gesuchterBuchstabe) {
