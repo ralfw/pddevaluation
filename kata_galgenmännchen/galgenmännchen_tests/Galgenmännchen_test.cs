@@ -25,8 +25,17 @@ namespace galgenmännchen_tests
             Assert.AreEqual("-", result);
         }
         
-        
         // @todo #1: Test für 1 Buchstabe, der passt, aber case insensitive
+        [Test]
+        public void Wort_mit_1_Buchstabe_der_passt_und_caseinsensitive()
+        {
+            var sut = new Galgenmännchen("a");
+            
+            var result = sut.RateBuchstabe('A');
+            Assert.AreEqual("a", result);
+        }
+        
+        
         
         // @todo #1: Tests für Worte mit mehreren Buchstaben
     }

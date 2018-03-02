@@ -13,7 +13,7 @@ namespace galgenmännchen
         // @todo #1: Gross/Kleinschreibung nicht unterscheiden
         public string RateBuchstabe(char buchstabe)
         {
-            if (_gesuchtesWort[0] == buchstabe)
+            if (char.ToLower(_gesuchtesWort[0]) == char.ToLower(buchstabe))
                 return _gesuchtesWort;
             return "-";
         }
