@@ -16,7 +16,6 @@ namespace galgenmännchen_tests
             Assert.AreEqual("a", result);
         }
         
-        // @todo #1: Test für 1 Buchstabe, der nicht passt
         [Test]
         public void Wort_mit_1_Buchstabe_der_nicht_passt()
         {
