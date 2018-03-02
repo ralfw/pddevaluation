@@ -37,5 +37,19 @@ namespace galgenmännchen_tests
         
         
         // @todo #1: Tests für Worte mit mehreren Buchstaben
+        [Test]
+        public void Wort_mit_mehreren_verschiedenen_Buchstaben()
+        {
+            var sut = new Galgenmännchen("abc");
+            
+            var result = sut.RateBuchstabe('A');
+            Assert.AreEqual("a--", result);
+            result = sut.RateBuchstabe('c');
+            Assert.AreEqual("a-c", result);
+            result = sut.RateBuchstabe('b');
+            Assert.AreEqual("abc", result);
+        }
+        
+        // @todo #1: Tests für Worte mit wiederholten Buchstaben
     }
 }
