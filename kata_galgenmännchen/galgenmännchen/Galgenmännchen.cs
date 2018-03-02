@@ -10,7 +10,6 @@ namespace galgenmännchen
             _gesuchtesWort = gesuchtesWort;
         }
 
-        // @todo #1: Gross/Kleinschreibung nicht unterscheiden
         public string RateBuchstabe(char buchstabe)
         {
             if (char.ToLower(_gesuchtesWort[0]) == char.ToLower(buchstabe))
