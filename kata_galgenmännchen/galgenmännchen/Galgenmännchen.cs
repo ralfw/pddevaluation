@@ -12,9 +12,14 @@ namespace galgenmännchen
 
         public string RateBuchstabe(char buchstabe)
         {
-            if (char.ToLower(_gesuchtesWort[0]) == char.ToLower(buchstabe))
-                return _gesuchtesWort;
-            return "-";
+
+            return Check_char(_gesuchtesWort[0], buchstabe).ToString();
+        }
+
+        private char Check_char(char wortbuchtabe, char gesuchterBuchstabe) {
+            if (char.ToLower(wortbuchtabe) == char.ToLower(gesuchterBuchstabe))
+                return wortbuchtabe;
+            return '-';
         }
     }
 }
