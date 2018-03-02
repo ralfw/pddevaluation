@@ -11,6 +11,7 @@ namespace galgenmännchen
             _erratenesWort = "".PadLeft(gesuchtesWort.Length, '-').ToCharArray();
         }
 
+        // @todo #1 Besser strukturieren nach IOSP
         public string RateBuchstabe(char buchstabe)
         {
             for(var i=0; i<_erratenesWort.Length; i++)
