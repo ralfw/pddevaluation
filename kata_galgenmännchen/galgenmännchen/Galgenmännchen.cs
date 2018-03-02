@@ -22,6 +22,8 @@ namespace galgenmännchen
             return new string(_erratenesWort);
         }
 
+        // @todo #1:5min Ternären Op benutzen
+        //  Damit kann die Logik auf eine Zeile reduziert werden.
         private char Check_char(char wortbuchtabe, char gesuchterBuchstabe) {
             if (char.ToLower(wortbuchtabe) == char.ToLower(gesuchterBuchstabe))
                 return wortbuchtabe;
