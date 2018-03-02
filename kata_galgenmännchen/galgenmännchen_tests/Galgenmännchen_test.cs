@@ -35,8 +35,6 @@ namespace galgenmännchen_tests
         }
         
         
-        
-        // @todo #1: Tests für Worte mit mehreren Buchstaben
         [Test]
         public void Wort_mit_mehreren_verschiedenen_Buchstaben()
         {

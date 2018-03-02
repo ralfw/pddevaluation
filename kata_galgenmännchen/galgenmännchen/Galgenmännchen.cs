@@ -2,7 +2,6 @@
 
 namespace galgenmännchen
 {
-    // @todo #1: Worte mit mehreren Buchstaben
     public class Galgenmännchen {
         private readonly string _gesuchtesWort;
         private readonly char[] _erratenesWort;
