@@ -1,5 +1,4 @@
-﻿using System;
-using galgenmännchen;
+﻿using galgenmännchen;
 using NUnit.Framework;
 
 namespace galgenmännchen_tests
