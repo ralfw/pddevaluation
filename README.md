@@ -12,3 +12,4 @@ Evaluate Puzzle Driven Development
 * again kili
 * kili trying on master
 * kili again on master
+* kili after cloning
