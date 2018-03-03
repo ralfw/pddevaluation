@@ -5,4 +5,7 @@ Evaluate Puzzle Driven Development
 
 ![0PDD status](http://www.0pdd.com/svg?name=ralfw/pddevaluation)
 
-* Kili joined the team. And is proud to be a member.
+* Kili joined the team.
+
+## Change log
+* Kili on branch
