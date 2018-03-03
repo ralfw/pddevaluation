@@ -1,5 +1,5 @@
 # pddevaluation
-Evaluate Puzzle Driven Development
+Evaluate Puzzle Driven Development with some katas.
 
 [Issues tracked by 0PDD](http://www.0pdd.com/p?name=ralfw/pddevaluation)
 
