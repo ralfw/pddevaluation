@@ -7,9 +7,9 @@
             var dlg = new Dialog();
             var rh = new RequestHandler();
 
-            var text = dlg.Text_erfragen();
-            var wortanzahl = rh.Count_words(text);
-            dlg.Ergebnis_anzeigen(wortanzahl);
+            var text = dlg.Ask_for_text();
+            var wordcount = rh.Count_words(text);
+            dlg.Display_result(wordcount);
         }
     }
 }

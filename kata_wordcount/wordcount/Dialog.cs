@@ -4,12 +4,12 @@ namespace wordcount
 {
     internal class Dialog
     {
-        public string Text_erfragen() {
+        public string Ask_for_text() {
             Console.Write("Text: ");
             return Console.ReadLine();
         }
 
-        public void Ergebnis_anzeigen(int wortanzahl) {
+        public void Display_result(int wortanzahl) {
             Console.WriteLine($"Anzahl Worte im Text: {wortanzahl}");
         }
     }
