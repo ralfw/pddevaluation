@@ -10,7 +10,7 @@ namespace wordcount
         }
 
         public void Ergebnis_anzeigen(int wortanzahl) {
-            Console.WriteLine($"Anzahl Worte im Text: {wordanzahl}");
+            Console.WriteLine($"Anzahl Worte im Text: {wortanzahl}");
         }
     }
 }
