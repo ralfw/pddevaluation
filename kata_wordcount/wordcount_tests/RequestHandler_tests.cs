@@ -15,7 +15,7 @@ namespace wordcount_tests
         [TestCase("Mary had a little lamb", 5)]
         public void Akteptanztest(string text, int wordcount)
         {
-            var sut = new RequestHandler();
+            var sut = new Wordcounting();
             Assert.AreEqual(wordcount, sut.Count_words(text));
         }
     }
