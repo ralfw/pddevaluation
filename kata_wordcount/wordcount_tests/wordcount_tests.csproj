@@ -45,6 +45,12 @@
     <Compile Include="RequestHandler_tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\wordcount\wordcount.csproj">
+      <Project>{AF9399F4-1231-4920-925E-CEA82374AC3F}</Project>
+      <Name>wordcount</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.

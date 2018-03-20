@@ -6,4 +6,13 @@
         {
         }
     }
+
+
+    internal class RequestHandler
+    {
+        public int Count_words(string text)
+        {
+            return 0;
+        }
+    }
 }
