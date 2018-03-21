@@ -8,9 +8,10 @@
             var swp = new StopwordsProvider();
             var rh = new RequestHandler(swp);
 
-            var text = dlg.Ask_for_text();
-            var wordcount = rh.Count_words(text);
-            dlg.Display_result(wordcount);
+            dlg.Repeatedly_ask_for_text(text => {
+                var wordcount = rh.Count_words(text);
+                dlg.Display_result(wordcount);
+            });
         }
     }
 }
