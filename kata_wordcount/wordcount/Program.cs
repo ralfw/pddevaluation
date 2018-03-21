@@ -5,7 +5,8 @@
         public static void Main(string[] args)
         {
             var dlg = new Dialog();
-            var rh = new Wordcounting();
+            var swp = new StopwordsProvider();
+            var rh = new RequestHandler(swp);
 
             var text = dlg.Ask_for_text();
             var wordcount = rh.Count_words(text);
