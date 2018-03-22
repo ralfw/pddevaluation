@@ -9,8 +9,7 @@
         }
 
 
-        public void Run(string[] args)
-        {
+        public void Run(string[] args) {
             var cli = new CLI(args);
         }
     }

@@ -7,6 +7,6 @@
             _args = args;
         }
 
-        public string Filename => _args[0];
+        public string Dateiname => _args[0];
     }
 }
